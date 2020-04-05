@@ -55,7 +55,8 @@ Da qui in poi inizia la fase di [codice](https://jalammar.github.io/a-visual-gui
   * [spaCy]()
 
 ## Data 
-* links 
+* [bert_final_data](https://www.kaggle.com/claudiomoroni/bert-final-data) 
+* [IMBD_data](https://www.kaggle.com/davideorsenigo/imbddata)
 
 ## References
 * from theory 
