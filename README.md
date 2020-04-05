@@ -1,3 +1,14 @@
-# Header
+# Data Mining Mini-Project: BERT 
 
-(put the content here)
+## Team 
+
+* [Monticone Pietro](https://github.com/pitmonticone)
+* [Moroni Claudio](https://github.com/claudio20497)
+* [Orsenigo Davide](https://github.com/dadorse)
+
+## Theory
+
+## Data 
+
+## References
+
