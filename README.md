@@ -25,7 +25,7 @@ At the end of the sequence of N encoders (N being the number of words in the inp
 1. the last hidden state and the WEV of the "START" token are passed to the first *decoder*;
 2. the decoder outputs a hidden state and a prection; 
 3. the hidden state and the prediction are passed to the second decoder; 
-4. the second decoder outputs a new hidden state and the second word of the translated/output sentence; 
+4. the second decoder outputs a new hidden state and the second word of the translated/output sentence
 
 and so on up until the whole sentence has been translated, namely when a decoder of the sequence outputs the WEV of the "END" token. Then there is an external mechanism to convert prediction vectors into real words, so it's very importance to notice that **the only purpose of decoders is to predict the next word**.  
 
