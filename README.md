@@ -59,4 +59,4 @@ Da qui in poi inizia la fase di [codice](https://jalammar.github.io/a-visual-gui
 * [IMBD_data](https://www.kaggle.com/davideorsenigo/imbddata)
 
 ## References
-* from theory 
+* [BERT: *Pre-training of Deep Bidirectional Transformers for Language Understanding*](https://arxiv.org/abs/1810.04805) 
