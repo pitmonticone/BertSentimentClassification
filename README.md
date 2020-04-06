@@ -62,6 +62,7 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 
 ## References
 * [BERT: *Pre-training of Deep Bidirectional Transformers for Language Understanding*](https://arxiv.org/abs/1810.04805) 
+* [A Visual Guide to Using BERT for the First Time](https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
 * [Machine Translation(Encoder-Decoder Model)!](https://medium.com/analytics-vidhya/machine-translation-encoder-decoder-model-7e4867377161)
 * [The Illustarted Tranformers](https://jalammar.github.io/illustrated-transformer/)
 * [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
