@@ -46,11 +46,11 @@ Tecnicalità di Bert: per lui, il primo token non è "START", ma è "CLS". Nell'
 Da qui in poi inizia la fase di [codice](https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
 
 ## Notebooks 
-* Submission: 
+#### Submission
   * [BERT-base]()
   * [BERT-large]()
-  
-* Attempts:
+
+#### Attempts
   * [BERT-tpu](https://www.kaggle.com/claudiomoroni/berttpu)
   * [spaCy]()
 
