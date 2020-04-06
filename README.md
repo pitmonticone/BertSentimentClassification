@@ -6,44 +6,46 @@
 * [Orsenigo Davide](https://github.com/dadorse)
 
 ## Theory
-### Encoders/decoders sequences
 
-Occorre anzitutto capire cos'è una sequenza di encoders / decoders, e a cosa serve. Farò riferimento a [Machine Translation Encoder Deocoder Model](https://medium.com/analytics-vidhya/machine-translation-encoder-decoder-model-7e4867377161) e a [Visualizing a Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/):<br>
+### The encoder-decoder sequence
 
-In breve: l'applicazione di sequenze di encoders/decoders è principalmente la traduzione automatica di frasi da una lingua all'altra. Bisogna pensare alla sequenza encoders/decoders come una sequenza di passaggi (coders) che portano (per esempio) dalla frase inglese "the pen is on the table" alla frase italiana  "la penna è sul tavolo".<br>
-In una sequenza encoders/decoders vengono prima tutti gli encoders e poi tutti i decoders, pertanto va visualizzata come:<br>
+Roughly speaking, an encoder-decoder sequence is an ordered collection of steps (*coders*) designed to automatically translate  sentences from a language to another (e.g. the English "the pen is on the table" into the Italian "la penna è sul tavolo"), which could be useful to visualize as follows: **input sentence** → (*encoders*) → (*decoders*) → **output/translated sentence**. <br>
 
-frase input $\to$ (encoders) $\to$ (decoders) $\to$ frase tradotta in output<br>
+For our practical purpose, encoders and decoders are effectively indistinguishable (that's why we will call them *coders*): both are composed of two layers: a **LSTM or GRU neural network** and an **attention module (AM)**. They only differ in the way in which their output is processed. 
 
-Per quello che ci riguarda, encoders e decoders sono la stessa cosa (a cui dunque ci riferiremo con la parola "coder"), e ciò che li distingue è il modo in cui ne trattiamo l'output.<br>
-Un coder è costituito da due strati:<br>
-- un "attention module" (AM) 
-- una rete neurale LSTM o GRU.  
+#### LSTM or GRU neural network
+Both the input and the output of an LSTM/GRU neural network consists of two vectors: 
+1. the **hidden state**: the representation of what the network has learnt about the sentence it's reading;
+2. the **prediction**: the representation of what the network predicts (e.g. translation). 
 
-L'AM lo descriveremo successivamente, per ora lo trascuriamo e sarà dunque sufficiente identificare ciascun coder con la sua rete.<br>  
-Non è importante capire nel dettaglio cosa voglia dire LSTM o GRU, l'unica cosa che va tenuta a mente è che sia l'input sia l'output di una LSTM/GRU è costituito da due vettori: il primo, che chiameremo "hidden state", rappresenta ciò che la rete ha imparato/capito *della frase che sta leggendo*, mentre il secondo, detto "prediction" è ciò che la rete prevede (ad es se la rete è fatta tradurre/classificare etc).<br>
+Each word in the English input sentence is translated into its word embedding vector (WEV) before being processed by the first coder (e.g. with `word2vec`). 
+The WEV of the first word of the sentence and a random hidden state are processed by the first coder of the sequence. Regarding the output: the prediction is ignored, while the hidden state and the WEV of the second word are passed as input into the second coder and so on to the last word of the sentence. Therefore in this phase the coders work as *encoders*.
 
-Anzitutto, prima che la frase inglese incontri il primo coder della sequenza di encoders/decoders, ciascuna sua parola và tradotta nel relativo word embedding. Questo va fatto esternamente alla sequenza encoders/decoders, per esempio con Word2vec.<br>
+At the end of the sequence of N encoders (N being the number of words in the input sentence), the **decoding phase** begins: 
+1. the last hidden state and the WEV of the "START" token are passed to the first *decoder*;
+2. the decoder outputs a hidden state and a prection; 
+3. the hidden state and the prediction are passed to the second decoder; 
+4. the second decoder outputs a new hidden state and the second word of the translated/output sentence; 
 
-Al primo coder della sequenza è passato il WEV della prima parola della frase e un hidden state random (ricorda che un coder è definito dalla sua rete, il cui input e output lo abbiamo descritto sopra). Dell'output,  la prediction è buttata via, mentre l'hidden state, assieme al WEV della seconda parola, sono passate in input al secondo coder e così via fino all'ultima parola della frase. <br>
-In questa fase dunque si scartano le predictions e si tengono gli hidden vectors, e dunque i coders di questa fase cono detti "encoders".<br>
-Terminata la successione di encoders ( che sono dunque in numero pari al numero delle parole della frase), l'ultimo hidden state prodotto è passato al primo coder della fase di decoding, assieme al WEV relativo al token di inizio frase "START". Il coder a questo punto produce un hidden state e una prediction. L'hidden state risultante, insieme con la prediction risultante che corrisponde a una sorta di WEV relativo alla prima parola della frase tradotta, vengono passati al secondo decoder ,che produrrà un nuovo hidden state e la seconda parola della frase tradotta, e così via finchè tutta la frase non è stata tradotta (la fine della traduzione è raggiunta quando uno dei decoders emette come prediction il vettore relativo al token "END"). Vi è poi un meccanismo esterno per convertire i vettori-predictions in vere parole.
-*Quindi l'obiettivo dei decoders è solo quello di predire la prossima parola.*<br>
+and so on up until the whole sentence has been translated, namely when a decoder of the sequence outputs the WEV of the "END" token. Then there is an external mechanism to convert prediction vectors into real words, so it's very importance to notice that **the only purpose of decoders is to predict the next word**.  
 
+#### Attention module (AM)
 
-Questo è il funzionamento "ad alto livello" di una successione di encoders/decoders.<br>
-Riguardo all'AM: prima abbiamo identificato un coder con una rete neurale. L'AM è un ulteriore strato che viene anteposto alla rete (quindi ora ogni coder è fatto di di uno strato di AM e da una rete, in quest'ordine), che si occupa di mettere in relazione le parole di una frase. Se, per esempio, ci concentriamo sulla parola "table" della frase da tradurre, il relativo encoder, grazie allo starto di AM, nel formulare la sua prediction e il suo hidden vector terrà maggiormente il considerazione la proposizione "on" (processata dall'encoder precedente) e di meno per esempio l'articolo "The" che è invece riferito a "cat". Vedere [Illustarted Tranformers](https://jalammar.github.io/illustrated-transformer/)  per maggiori info.<br>
+The attention module is a further layer that is placed before the network which provides the collection of words of the sentence with a relational structure. Let's consider the word "table" in the sentence used as an exampe above. Because of the AM, the encoder will weight the preposition "on" (processed by the previous encoder) more than the article "the" which refers to the subject "cat". 
 
-### Bert
+### BERT
 
-Definizione: un **Transformer** è un coder con anche lo strato AM. A volte si usa il termine **Tranformer** per indicare una sequenza di coders cona nche lo starto AM. Si è osservato cheq queste funzionano molto meglio delle sequenze encoders/decoders pure.
+#### Transformer
+The transformer is a coder endowed with the AM layer. Transformers have been observed to work much better than the basic encoder-decoder sequences.
 
-Definizione: **Bert** è un pre-trained Transformer Decoders stack. Dunque l'obiettivo con cui è stato allenato è quello di *predire la prossima parola* (e, vedremo, anche la prossima frase).
-Facendo riferimento al link [illustrated Bert](https://jalammar.github.io/illustrated-bert/); In sostanza, come detto nella definizione di Transformer, questi si comportano meglio delle sequenze encoders/decoders pure. Tuttavia, nella sostituzione di queste coi Transoformers si perde una feature delle sequenze di encoders/decoders pure, ossia la *bidirezioanlità* (capacità di predire oltre alla parola successiva anche quella precedente). **Bert** è la soluzione a questo problema, ed è dunque un Tranformer che conserva la *bidirezionalità*.
+#### BERT
 
-Tecnicalità di Bert: per lui, il primo token non è "START", ma è "CLS". Nell'ottical di usare Bert come modello pre-trained per fare classificazione di frasi, questa è ottenuta dando come input a una regressione lineare la prediction output di Bert relativa al token "CLS". Questo è poichè Bert è stato anche allenato a *predire la prossima frase* ( e non solo dunque la prossima parola), e l'informazione relativa al senso della frase corrente viene codificata nel prediction output del token "CLS". Questo va visto come un document vector di 512 elementi.
+BERT is a sequence of encoder-type transformers which was pre-trained to *predict* a word or sentence (i.e. used as decoder). The benefit of improved performance of Transformers comes at a cost: the loss of *bidirectionality*, which is the ability to predict both next word and the previous one. BERT is the solution to this problem, a Tranformer which preserves *biderectionality*.
 
-Da qui in poi inizia la fase di [codice](https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
+##### Notes  
+The first token is not "START". In order to use BERT as a pre-trained language model for sentence-classification, we need to input the BERT prediction of "CLS" into a linear regression because 
+* the model has been trained to predict the next sentence, not just the next word; 
+* the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
 ## Notebooks 
 #### Submission
