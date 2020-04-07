@@ -50,13 +50,9 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
 ## Notebooks 
-#### Submission
-  * [BERT-base]()
-  * [BERT-large]()
+* [BERT](https://www.kaggle.com/davideorsenigo/my-bert-sub)
 
-#### Attempts
-  * [BERT-tpu](https://www.kaggle.com/claudiomoroni/berttpu)
-  * [spaCy]()
+* [Attempt with BERT-TPU](https://www.kaggle.com/claudiomoroni/berttpu)
 
 ## Data 
 * [bert_final_data](https://www.kaggle.com/claudiomoroni/bert-final-data) 
