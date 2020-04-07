@@ -49,6 +49,8 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * the model has been trained to predict the next sentence, not just the next word; 
 * the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
+![](images/bert-diagram)
+
 ## Notebooks 
 * [BERT](https://www.kaggle.com/davideorsenigo/my-bert-sub)
 
