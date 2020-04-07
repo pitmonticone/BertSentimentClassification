@@ -5,9 +5,7 @@
 * [Moroni Claudio](https://github.com/claudio20497)
 * [Orsenigo Davide](https://github.com/dadorse)
 
-# Data Mining Mini-Project: BERT
-
-## Theory
+## Theoretical introduction
 
 ### The encoder-decoder sequence
 
