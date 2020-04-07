@@ -5,6 +5,8 @@
 * [Moroni Claudio](https://github.com/claudio20497)
 * [Orsenigo Davide](https://github.com/dadorse)
 
+# Data Mining Mini-Project: BERT
+
 ## Theory
 
 ### The encoder-decoder sequence
@@ -33,7 +35,7 @@ and so on up until the whole sentence has been translated, namely when a decoder
 
 The attention module is a further layer that is placed before the network which provides the collection of words of the sentence with a relational structure. Let's consider the word "table" in the sentence used as an exampe above. Because of the AM, the encoder will weight the preposition "on" (processed by the previous encoder) more than the article "the" which refers to the subject "cat". 
 
-### BERT
+### Bidirectional Encoder Representations from Transformers (BERT)
 
 #### Transformer
 The transformer is a coder endowed with the AM layer. Transformers have been observed to work much better than the basic encoder-decoder sequences.
