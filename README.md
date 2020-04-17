@@ -57,6 +57,7 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 ## Data 
 * [bert_final_data](https://www.kaggle.com/claudiomoroni/bert-final-data) 
 * [IMBD_data](https://www.kaggle.com/davideorsenigo/imbddata)
+* [Large Movie Review Dataset v1.0](https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz)
 
 ## References
 * [Google github repository](https://github.com/google-research/bert)
@@ -66,3 +67,4 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * [The Illustarted Tranformers](https://jalammar.github.io/illustrated-transformer/)
 * [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
 * [BERT Explained: State of the art language model for NLP](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270)
+* [Learning Word Vectors for Sentiment Analysis](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf). 
