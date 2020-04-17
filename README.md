@@ -5,6 +5,27 @@
 * [Moroni Claudio](https://github.com/claudio20497)
 * [Orsenigo Davide](https://github.com/dadorse)
 
+## Problem: *Sentiment Classification*
+
+A sentiment classification problem consists, roughly speaking, in detecting a piece of text and predicting if the author likes or dislikes what he/she is talking about: the input $X$ is a piece of text and the output $Y$ is the sentiment we want to predict, such as the rating of a movie review.
+
+If we can train a model to map $X$ to $Y$ based on a labelled dataset then it can be used to predict sentiment of a reviewer after watching a movie.
+
+
+## Data: *Large Movie Review Dataset v1.0*
+
+The [dataset](https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz) contains movie reviews along with their associated binary sentiment polarity labels. 
+
+* The core dataset contains 50,000 reviews split evenly into 25k train and 25k test sets. 
+* The overall distribution of labels is balanced (25k pos and 25k neg). 
+* 50,000 unlabeled documents for unsupervised learning are included, but they won't be used. 
+* The train and test sets contain a disjoint set of movies, so no significant performance is obtained by memorizing movie-unique terms and their associated with observed labels.  
+* In the labeled train/test sets, a negative review has a score $\leq$ 4 out of 10, and a positive review has a score $\geq$ 7 out of 10. Thus reviews with more neutral ratings are not included in the train/test sets. 
+* In the unsupervised set, reviews of any rating are included and there are an even number of reviews > 5 and $\leq$ 5.
+
+#### Reference 
+Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, and Christopher Potts. (2011). [Learning Word Vectors for Sentiment Analysis](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf). The 49th Annual Meeting of the Association for Computational Linguistics (ACL 2011).
+
 ## Theoretical introduction
 
 ### The encoder-decoder sequence
