@@ -1,4 +1,4 @@
-# BERT 
+# BERT Sentiment Classification
 
 ## Team 
 * [Monticone Pietro](https://github.com/pitmonticone)
