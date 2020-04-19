@@ -70,16 +70,6 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 
 ![](https://github.com/pitmonticone/data-mining-bert/blob/master/images/bert-diagram.png)
 
-## Notebooks 
-* [BERT](https://www.kaggle.com/davideorsenigo/my-bert-sub)
-
-* [Attempt with BERT-TPU](https://www.kaggle.com/claudiomoroni/berttpu)
-
-## Data 
-* [bert_final_data](https://www.kaggle.com/claudiomoroni/bert-final-data) 
-* [IMBD_data](https://www.kaggle.com/davideorsenigo/imbddata)
-* [Large Movie Review Dataset v1.0](https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz)
-
 ## References
 * [Google github repository](https://github.com/google-research/bert)
 * [BERT: *Pre-training of Deep Bidirectional Transformers for Language Understanding*](https://arxiv.org/abs/1810.04805) 
