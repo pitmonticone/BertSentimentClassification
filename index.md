@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/InPhyT/DataMiningBert/master)
+
 # BERT Sentiment Classification
 
 ## Team 
@@ -69,6 +71,13 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
 ![](https://github.com/pitmonticone/data-mining-bert/blob/master/images/bert-diagram.png)
+
+## Datasets
+
+* [bert_final_data](https://www.kaggle.com/dataset/c57aa27bcd81c6062bf454a37f1c55a8730a90a69a9e95a49252fbd660befebf)
+* Processed IMBD
+  * https://www.kaggle.com/dataset/5f1193b4685a6e3aa8b72fa3fdc427d18c3568c66734d60cf8f79f2607551a38
+  * https://www.kaggle.com/dataset/9850d2e4b7d095e2b723457263fbef547437b159e3eb7ed6dc2e88c7869fca0b
 
 ## References
 * [Google github repository](https://github.com/google-research/bert)
