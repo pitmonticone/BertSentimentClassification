@@ -1,4 +1,10 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/InPhyT/DataMiningBert/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pitmonticone/BertSentimentClassification/master)
+<a href="https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width:250px;"/>
+  </a>
+<a href="https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/">
+  <img src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg" alt="Open In nbviewer" style="width:250px;"/>
+</a>
 
 # BERT Sentiment Classification
 
