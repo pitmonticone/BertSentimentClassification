@@ -1,12 +1,10 @@
 [![DOI](https://zenodo.org/badge/257425062.svg)](https://zenodo.org/badge/latestdoi/257425062)
+![Size](https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pitmonticone/BertSentimentClassification/master)
 [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/davideorsenigo/bert-submission)
-<a href="https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width:250px;"/>
-  </a>
-<a href="https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/">
-  <img src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg" alt="Open In nbviewer" style="width:250px;"/>
-</a>
+[![nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master)
 
 # BERT Sentiment Classification
 
@@ -97,3 +95,20 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
 * [BERT Explained: State of the art language model for NLP](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270)
 * [Learning Word Vectors for Sentiment Analysis](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf). 
+
+<br><br>
+## Copyright 2020 Pietro Monticone
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
