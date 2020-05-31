@@ -1,9 +1,8 @@
-[![DOI](https://zenodo.org/badge/257425062.svg)](https://zenodo.org/badge/latestdoi/257425062)
 ![Size](https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pitmonticone/BertSentimentClassification/master)
 [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/davideorsenigo/bert-submission)
-[![nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master)
 
 # BERT Sentiment Classification
