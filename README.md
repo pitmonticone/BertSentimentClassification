@@ -1,11 +1,39 @@
-![Size](https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pitmonticone/BertSentimentClassification/master)
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/davideorsenigo/bert-submission)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master)
+<!-- Meta-Badges -->
+</p>
 
-# BERT Sentiment Classification
+<p align="center">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification">
+  </a>
+    <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
+  </a>
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
+  </a>
+    <a href="https://opensource.org/licenses/Apache-2.0">
+    <img alt="Apache-2.0 Licence" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
+  </a>
+  
+</p>
+
+<!-- Title -->
+<h1 align="center">
+  BERT Sentiment Classification
+</h1>
+
+<!-- Badges -->
+</p>
+
+<p align="center">
+  <a href="https://www.kaggle.com/davideorsenigo/bert-submission">
+    <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
+  </a>
+  <a href="https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/">
+    <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
+  </a>
+  <a href="https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master">
+    <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+  </a>
+  
+</p>
 
 ## Team 
 * Monticone Pietro | [Mail](pietro.monticone@edu.unito.it) | [Github](https://github.com/pitmonticone)
