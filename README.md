@@ -2,43 +2,54 @@
 </p>
 
 <p align="center">
-    <img alt="Size" src="https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/DataMiningProject">
   </a>
-    <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
+    <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/DataMiningProject">
   </a>
-    <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
+  <a href="https://github.com/InPhyT/DataMiningProject/graphs/contributors">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/InPhyT/DataMiningProject">
   </a>
-    <a href="https://opensource.org/licenses/Apache-2.0">
-    <img alt="Apache-2.0 Licence" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
+    <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
   
 </p>
 
 <!-- Title -->
 <h1 align="center">
-  BERT Sentiment Classification
+  Data Mining Project
 </h1>
+
+<!-- Subtitle -->
+<h3 align="center">
+  BERT Sentiment Classification
+</h3>
 
 <!-- Badges -->
 </p>
 
 <p align="center">
-  <a href="https://www.kaggle.com/davideorsenigo/bert-submission">
+  <a href="https://www.kaggle.com/inphyt2020/dataminingproject">
     <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
   </a>
-  <a href="https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/">
+  <a href="https://nbviewer.jupyter.org/github/InPhyT/DataMiningProject/">
     <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
   </a>
-  <a href="https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master">
+  <a href="https://colab.research.google.com/github/InPhyT/DataMiningProject/blob/master">
     <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
   
 </p>
 
+
 ## Team 
 * Monticone Pietro | [Mail](pietro.monticone@edu.unito.it) | [Github](https://github.com/pitmonticone)
 * Moroni Claudio | [Mail](claudio.moroni@edu.unito.it) | [Github](https://github.com/claudio20497)
 * Orsenigo Davide | [Mail](davide.orsenigo@edu.unito.it) | [Github](https://github.com/dadorse) 
+
+## How to Explore this Work
+
+* Read the code in the [Jupyter notebooks](https://nbviewer.jupyter.org/github/InPhyT/DataMiningProject/blob/master/Notebooks).
+* Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/dataminingproject).
 
 ## Problem: *Sentiment Classification*
 
@@ -61,7 +72,7 @@ The [dataset](https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz) c
 #### Reference 
 Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, and Christopher Potts. (2011). [Learning Word Vectors for Sentiment Analysis](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf). The 49th Annual Meeting of the Association for Computational Linguistics (ACL 2011).
 
-## Theoretical introduction
+## Theory
 
 ### The encoder-decoder sequence
 
@@ -103,17 +114,19 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * the model has been trained to predict the next sentence, not just the next word; 
 * the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
-![](https://github.com/pitmonticone/data-mining-bert/blob/master/images/bert-diagram.png)
+![](https://github.com/InPhyT/DataMiningProject/blob/master/Images/diagram.png)
 
-## Datasets
+## References
 
-* [BERT final data](https://www.kaggle.com/dataset/c57aa27bcd81c6062bf454a37f1c55a8730a90a69a9e95a49252fbd660befebf)
+### Datasets
+
+* [bert_final_data](https://www.kaggle.com/dataset/c57aa27bcd81c6062bf454a37f1c55a8730a90a69a9e95a49252fbd660befebf)
 * Processed IMBD
   * https://www.kaggle.com/dataset/5f1193b4685a6e3aa8b72fa3fdc427d18c3568c66734d60cf8f79f2607551a38
   * https://www.kaggle.com/dataset/9850d2e4b7d095e2b723457263fbef547437b159e3eb7ed6dc2e88c7869fca0b
-* [BERT for Tf2](https://www.kaggle.com/juanumusic/bert-for-tf2)
+* [Bert-For-Tf2](https://www.kaggle.com/juanumusic/bert-for-tf2)
 
-## References
+### Articles
 * [Google github repository](https://github.com/google-research/bert)
 * [BERT: *Pre-training of Deep Bidirectional Transformers for Language Understanding*](https://arxiv.org/abs/1810.04805) 
 * [A Visual Guide to Using BERT for the First Time](https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
@@ -122,20 +135,3 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
 * [BERT Explained: State of the art language model for NLP](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270)
 * [Learning Word Vectors for Sentiment Analysis](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf). 
-
-<br><br>
-## Copyright 2020 Pietro Monticone
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.

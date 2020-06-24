@@ -1,3 +1,13 @@
+<!-- Title -->
+<h1 align="center">
+  Data Mining Project
+</h1>
+
+<!-- Subtitle -->
+<h3 align="center">
+  BERT Sentiment Classification
+</h3>
+
 ## Team 
 * [Monticone Pietro](https://github.com/pitmonticone)
 * [Moroni Claudio](https://github.com/claudio20497)
