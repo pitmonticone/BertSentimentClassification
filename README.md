@@ -19,6 +19,11 @@
   BERT Sentiment Classification
 </h1>
 
+<!-- Subtitle -->
+<h3 align="center">
+  An Application to the Large Movie Review Dataset
+</h3>
+
 <!-- Badges -->
 </p>
 
