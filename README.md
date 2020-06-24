@@ -6,7 +6,7 @@
   </a>
     <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
   </a>
-  <a href="https://github.com/pitmonticone/BertSentimentClassification/graphs/contributors">
+  <a href="https://github.com/InPhyT/DataMiningProject/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
   </a>
     <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
