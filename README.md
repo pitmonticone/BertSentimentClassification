@@ -2,12 +2,12 @@
 </p>
 
 <p align="center">
-    <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/DataMiningProject">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification">
   </a>
-    <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/DataMiningProject">
+    <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
   </a>
-  <a href="https://github.com/InPhyT/DataMiningProject/graphs/contributors">
-    <img alt="Contributors" src="https://img.shields.io/github/contributors/InPhyT/DataMiningProject">
+  <a href="https://github.com/pitmonticone/BertSentimentClassification/graphs/contributors">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
   </a>
     <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
@@ -16,13 +16,8 @@
 
 <!-- Title -->
 <h1 align="center">
-  Data Mining Project
-</h1>
-
-<!-- Subtitle -->
-<h3 align="center">
   BERT Sentiment Classification
-</h3>
+</h1>
 
 <!-- Badges -->
 </p>
@@ -31,10 +26,10 @@
   <a href="https://www.kaggle.com/inphyt2020/dataminingproject">
     <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
   </a>
-  <a href="https://nbviewer.jupyter.org/github/InPhyT/DataMiningProject/">
+  <a href="https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification">
     <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
   </a>
-  <a href="https://colab.research.google.com/github/InPhyT/DataMiningProject/blob/master">
+  <a href="https://colab.research.google.com/github/pitmonticone/BertSentimentClassification/blob/master">
     <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
   
@@ -48,7 +43,7 @@
 
 ## How to Explore this Work
 
-* Read the code in the [Jupyter notebooks](https://nbviewer.jupyter.org/github/InPhyT/DataMiningProject/blob/master/Notebooks).
+* Read the code in the [Jupyter notebooks](https://nbviewer.jupyter.org/github/pitmonticone/BertSentimentClassification/blob/master/Notebooks).
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/dataminingproject).
 
 ## Problem: *Sentiment Classification*
@@ -114,7 +109,7 @@ The first token is not "START". In order to use BERT as a pre-trained language m
 * the model has been trained to predict the next sentence, not just the next word; 
 * the semantic information of the sentence is encoded in the prediction output of "CLS" as a document vector of 512 elements.
 
-![](https://github.com/InPhyT/DataMiningProject/blob/master/Images/diagram.png)
+![](https://github.com/pitmonticone/BertSentimentClassification/blob/master/Images/diagram.png)
 
 ## References
 
