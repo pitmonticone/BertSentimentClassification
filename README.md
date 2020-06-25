@@ -9,8 +9,6 @@
   <a href="https://github.com/pitmonticone/DataMiningProject/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
   </a>
-  <img alt="Stars" src="https://img.shields.io/packagist/stars/pitmonticone/BertSentimentClassification">
-  </a>
   <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
   
