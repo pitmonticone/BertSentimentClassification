@@ -4,12 +4,18 @@
 <p align="center">
     <img alt="Size" src="https://img.shields.io/github/repo-size/pitmonticone/BertSentimentClassification">
   </a>
-    <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
+  <img alt="Forks" src="https://img.shields.io/github/forks/pitmonticone/BertSentimentClassification">
+  </a>
+  <img alt="Stars" src="https://img.shields.io/github/stars/pitmonticone/BertSentimentClassification">
+  </a>
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
   </a>
   <a href="https://github.com/pitmonticone/DataMiningProject/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
   </a>
-  <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  <img alt="MIT Licence" src="https://img.shields.io/github/license/pitmonticone/BertSentimentClassification">
+  </a>
+  <img alt="Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fpitmonticone%2FBertSentimentClassification"
   </a>
   
 </p>
