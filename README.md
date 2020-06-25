@@ -10,7 +10,7 @@
   </a>
   <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/BertSentimentClassification">
   </a>
-  <a href="https://github.com/pitmonticone/DataMiningProject/graphs/contributors">
+  <a href="https://github.com/pitmonticone/BertSentimentClassification/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/pitmonticone/BertSentimentClassification">
   </a>
   <img alt="MIT Licence" src="https://img.shields.io/github/license/pitmonticone/BertSentimentClassification">
